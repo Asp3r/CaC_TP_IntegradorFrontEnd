@@ -185,12 +185,12 @@
         <div class="container formPostulacionTitulo">
           <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><p>CONVIERTETE EN UN</p></div>
+            <div class="col-sm-4"><p>VEN A VISITAR EL</p></div>
             <div class="col-sm-4"></div>
           </div>
           <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><h4>LABMEMBER</h4></div>
+            <div class="col-sm-4"><h4>LABORATORIO DE ARTEFACTOS FUTURISTAS</h4></div>
             <div class="col-sm-4"></div>
           </div>
         </div>
@@ -198,9 +198,50 @@
         <!-- ACA COMIENZA -->
         
         <div class="invitacionPostulacion">
-          <p>¿Quieres ser parte del laboratorio? ¡Postulate y cuentanos sobre ti!</p>
+          <p>¡Tenemos increibles descuentos en nuestros tour actualmente!</p>
+          <h4>VALOR BRUTO DE LA ENTRADA: 200$</h4>
         </div>
 
+        <!-- Inicio cards de ofertas -->
+
+        <div class="container" id="descuentos">
+          <div class="row">
+            <div class="col-sm-4 columnasDescuentos">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento del:</h6>
+                  <p class="card-text">80%</p>
+                  <p class="card-link">*presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 columnasDescuentos">
+              <div class="card" style="width: 18rem;" id="colCentral">
+                <div class="card-body">
+                  <h5 class="card-title">Trainee</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento del:</h6>
+                  <p class="card-text">50%</p>
+                  <p class="card-link">*presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 columnasDescuentos">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Junior</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Tiene un descuento del:</h6>
+                  <p class="card-subtitle mb-2">15%</p>
+                  <p class="card-link">*presentar documentacion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- fin de cards de ofertas -->
+        
         <!-- ACA TERMINA -->
 
         <!-- input de nombre y apellido -->
@@ -224,22 +265,72 @@
           <div class="row">
 
             <div class="col text-center" id="colPostulacion">
-              <textarea name="" id="infoPostulacion" cols="50" rows="05" placeholder="Cuentanos un poco sobre ti."></textarea>
-              <div class="epigrafePostulacion">
-                <p>No te olvides de incluir informacion sobre tus pasatiempos y educacion.</p>
-              </div>
-              
+              <textarea name="" id="infoPostulacion" cols="50" rows="1" placeholder="Correo."></textarea>
             </div>
           </div>
 
         </div>
 
-        <!-- boton para enviar informacion -->
-        <div class="d-grid" id="cajaDeBoton">
-          <button class="btn btn-primary mx-auto" type="button" id="botonPostulacion">enviar</button>
+        <!-- INICIO SECICON BOLETOS -->
+
+        <div class="container" id="elegirBoletos">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Cantidad</p>
+            </div>
+            <div class="col-md-6">
+              <p>Categoria</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" id="cantidadNum">
+              <input type="text" id="numeroEntradas" placeholder="Cantidad">
+            </div>
+            <div class="col-md-6">
+            
+              <!-- Inicio menu desplegable -->
+
+              <!-- <label for="">Pais</label> -->
+                <!-- <input type="color" id="paises"> -->
+
+                <select name="hola" id="menuDesplegable">
+
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Trainee">Trainee</option>
+                    <option value="Junior">Junior</option>
+
+                </select>
+
+              <!-- Fin menu desplegable -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container totalPagar" style="width: 43%;">
+
+          <div class="row pagar">
+            <div class="col text-center" id="colPagar">
+              <p id="montoTotal">Total a pagar: $</p>
+            </div>
+          </div>
+
         </div>
         
-        
+
+        <!-- FIN SECCION BOLETOS -->
+
+        <!-- botones para enviar informacion -->
+        <div class="container" id="botonesFinal">
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-primary mx-auto" type="button" id="botonBorrar">Borrar</button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-primary mx-auto" type="button" id="botonResumen">Resumen</button>
+            </div>
+          </div>
+        </div>
         
     </main>
 
@@ -274,5 +365,10 @@
 
     <!-- Implementacion bootstrap para JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <!-- archivo js local -->
+
+    <script src="calculoEntrada.js"></script>
   </body>
 </html>

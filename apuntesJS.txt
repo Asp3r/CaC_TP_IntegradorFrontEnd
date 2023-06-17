@@ -1,0 +1,16 @@
+Javascript: Lenguaje interpretado (por el navegador)
+
+usos actuales de js:
+
+-web(front)
+-mobile
+-app  de escritorio
+-IOT (internet of things)
+-backend (Node JS)
+
+ES UN LENGUAJE DE PROGRAMACION (Algoritmos)
+
+---------------------------------
+
+A partir de ahora usar "let" y "const". No usar "var"
+

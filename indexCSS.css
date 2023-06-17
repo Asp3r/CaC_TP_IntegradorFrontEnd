@@ -117,16 +117,6 @@
     padding-top: 2%;
 }
 
-#botonPostulacion{
-    width: 41%;
-    background-color: rgb(66, 173, 66);
-    border-color: lightgreen;
-}
-
-#cajaDeBoton{
-    margin-bottom: 20px;
-}
-
 #navDeFooter{
     background: linear-gradient(to right, #14406b, #2478ac);
     text-align: center;
@@ -136,3 +126,87 @@
     margin-top: 10%;
 }
 
+#descuentos{
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#colCentral{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.card-body{
+    text-align: center;
+}
+
+#elegirBoletos{
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.invitacionPostulacion{
+    margin-bottom: 40px;
+}
+
+#cantidadNum{
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+#menuDesplegable{
+    width: 100%;
+    margin-left: 0px;
+}
+
+#numeroEntradas{
+    margin-left: 0px;
+    width: 100%;
+}
+
+#botonesFinal{
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+#botonBorrar, #botonResumen{
+    background-color: rgb(102, 194, 41);
+    border-color: rgb(102, 194, 41);
+
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 0px;
+
+}
+
+.totalPagar{
+    /* width: 21%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; 
+
+    height: 50px;
+    background-color: lightblue;
+
+    border-radius: 5px;
+
+}
+
+
+.totalPagar .pagar p {
+    width: 50%;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  
+  
